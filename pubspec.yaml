@@ -37,11 +37,14 @@ dependencies:
   get: ^4.6.6
   flutter_screenutil: ^5.9.0
   flutter_svg: ^2.0.10+1
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.18.0 # 用于国际化的工具包
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  intl_translation: ^0.19.0
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
@@ -57,6 +60,7 @@ flutter:
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
+  generate: true
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
