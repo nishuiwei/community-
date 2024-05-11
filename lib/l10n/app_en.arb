@@ -1,4 +1,9 @@
 {
+  "@@locale": "en",
   "language": "English",
-  "title": "Message"
+  "messages_app_bar_title": "Messages",
+  "message_reply": "reply",
+  "message_share": "share",
+  "message_favourite": "favourity",
+  "message_username": "system notification"
 }

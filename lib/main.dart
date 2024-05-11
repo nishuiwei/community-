@@ -17,6 +17,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ThemeController themeController = Get.put(ThemeController());
+    Locale currentLocale = getCurrentLocale();
+
     return ScreenUtilInit(
         designSize: const Size(360, 690),
         builder: (_, child) => GetMaterialApp(
@@ -35,7 +37,12 @@ class MyApp extends StatelessWidget {
                 Locale('en'), // English
                 Locale('zh'), // Spanish
               ],
-              locale: const Locale('en'), // 默认语言设置
+
+              locale: currentLocale, // 默认语言设置
             ));
   }
+}
+
+Locale getCurrentLocale() {
+  return WidgetsBinding.instance.window.locale;
 }
